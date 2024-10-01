@@ -137,3 +137,5 @@ if type nvim > /dev/null 2>&1; then
             export EDITOR=nvim
                 export GIT_EDITOR=nvim
 fi
+
+alias vimcon="vim ~/.config/nvim/init.lua"
