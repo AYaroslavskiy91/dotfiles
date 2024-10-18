@@ -41,6 +41,6 @@ for NVIMFILE in `ls -A $NVIMFILES`; do
 done
 
 git config --global init.defaultbranch main
-git config --global push.autosetupremote
+git config --global --add push.autoSetupRemote true
 git config --global merge.conflictstyle diff3
 git config --global color.ui true

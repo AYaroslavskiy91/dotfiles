@@ -2,17 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ayaroslavskiy@cadent.tv/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="mdr"
+ZSH_THEME="xiong-chiamiov-plus"
 
-
-# Airflow
-export DAGS_PCKG_PATH='~/projects/ds-airflow-dags/ds_k8s_airflow_dags'
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -103,34 +100,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# virtualenv
-function ve() {
-  if test "$1" = "ls"; then
-    ls $HOME/ve | cat
-    return
-  fi
-  if test "$1" = "create"; then
-    virtualenv $HOME/ve/$2
-    return
-  fi
-  source $HOME/ve/$1/bin/activate
-}
 
-# Java
-JAVA_HOME_CMD=/usr/libexec/java_home
-export JAVA_11_HOME=$($JAVA_HOME_CMD -v 11)
-alias java11="export JAVA_HOME=$JAVA_11_HOME"
-#set default to Java 11
-java11
 
-source $HOME/.zshrc.local
-
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
-eval "$(register-python-argcomplete pipx)"
-# Created by `pipx` on 2023-11-21 19:28:56
-export PATH="$PATH:/Users/ayaroslavskiy@cadent.tv/.local/bin"
-
+# auto-suggester
+plugins=(git zsh-suggestions)
+## pyenv configs
+export PYENV_ROOT="$HOME/.pyenv"
 #neovim
 if type nvim > /dev/null 2>&1; then
         alias vim='nvim'
@@ -139,3 +114,6 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 alias vimcon="vim ~/.config/nvim/init.lua"
+
+# Created by `pipx` on 2024-10-18 15:56:54
+export PATH="$PATH:/home/ayaros/.local/bin"
