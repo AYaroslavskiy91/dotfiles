@@ -115,5 +115,5 @@ fi
 
 alias vimcon="vim ~/.config/nvim/init.lua"
 
+source $HOME/.zshrc.local
 # Created by `pipx` on 2024-10-18 15:56:54
-export PATH="$PATH:/home/ayaros/.local/bin"

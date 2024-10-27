@@ -1,0 +1,10 @@
+[include]
+	path = ~/.gitconfig.local
+[init]
+	defaultbranch = main
+[merge]
+	conflictstyle = diff3
+[color]
+	ui = true
+[push]
+	autoSetupRemote = true
