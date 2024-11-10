@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+#If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -70,8 +70,9 @@ ZSH_THEME="xiong-chiamiov-plus"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 
+# auto-suggester
+plugins=(git zsh-suggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -102,8 +103,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-# auto-suggester
-plugins=(git zsh-suggestions)
 ## pyenv configs
 export PYENV_ROOT="$HOME/.pyenv"
 #neovim
