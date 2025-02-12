@@ -248,6 +248,9 @@ require('lazy').setup({
   --    require('gitsigns').setup({ ... })
   --
   -- See `:help gitsigns` to understand what the configuration keys do
+  {
+    'tpope/vim-fugitive',
+  },
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
@@ -673,6 +676,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         -- gopls = {},
+        ruff = {},
         pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs

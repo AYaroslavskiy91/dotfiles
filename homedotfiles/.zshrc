@@ -72,7 +72,7 @@ ZSH_THEME="mdr"
 # Add wisely, as too many plugins slow down shell startup.
 
 # auto-suggester
-plugins=(git zsh-suggestions)
+plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -103,16 +103,19 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-## pyenv configs
-export PYENV_ROOT="$HOME/.pyenv"
-#neovim
-if type nvim > /dev/null 2>&1; then
-        alias vim='nvim'
-            export EDITOR=nvim
-                export GIT_EDITOR=nvim
-fi
+# ## pyenv configs
+# # export PYENV_ROOT="$HOME/.pyenv"
+# #neovim
+# if type nvim > /dev/null 2>&1; then
+#         alias vim='nvim'
+#             export EDITOR=nvim
+#                 export GIT_EDITOR=nvim
+# fi
 
 alias vimcon="vim ~/.config/nvim/init.lua"
 
 source $HOME/.zshrc.local
 # Created by `pipx` on 2024-10-18 15:56:54
+#
+# enable vim keybindings
+bindkey -v
