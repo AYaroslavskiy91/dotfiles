@@ -119,3 +119,10 @@ source $HOME/.zshrc.local
 #
 # enable vim keybindings
 bindkey -v
+
+# enable vim -> nvim
+if type nvim > /dev/null 2>&1; then
+        alias vim='nvim'
+            export EDITOR=nvim
+                export GIT_EDITOR=nvim
+fi
