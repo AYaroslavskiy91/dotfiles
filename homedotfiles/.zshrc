@@ -126,3 +126,6 @@ if type nvim > /dev/null 2>&1; then
             export EDITOR=nvim
                 export GIT_EDITOR=nvim
 fi
+
+# Created by `userpath` on 2025-02-18 15:31:26
+export PATH="$PATH:/home/ayaros/.local/share/hatch/pythons/3.12/python/bin"
