@@ -70,9 +70,10 @@ ZSH_THEME="mdr"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+VI_MODE_DISABLE_CLIPBOARD=yes
 
 # auto-suggester
-plugins=(git zsh-autosuggestions)
+plugins=(vi-mode git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -118,7 +119,7 @@ source $HOME/.zshrc.local
 # Created by `pipx` on 2024-10-18 15:56:54
 #
 # enable vim keybindings
-bindkey -v
+# bindkey -v
 
 # enable vim -> nvim
 if type nvim > /dev/null 2>&1; then
