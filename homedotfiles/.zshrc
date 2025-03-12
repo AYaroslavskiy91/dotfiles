@@ -73,7 +73,7 @@ ZSH_THEME="mdr"
 VI_MODE_DISABLE_CLIPBOARD=yes
 
 # auto-suggester
-plugins=(vi-mode git zsh-autosuggestions)
+plugins=(vi-mode git zsh-autosuggestions tmux)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -127,6 +127,8 @@ if type nvim > /dev/null 2>&1; then
             export EDITOR=nvim
                 export GIT_EDITOR=nvim
 fi
+
+export TERM=xterm-256color
 
 # Created by `userpath` on 2025-02-18 15:31:26
 export PATH="$PATH:/home/ayaros/.local/share/hatch/pythons/3.12/python/bin"
