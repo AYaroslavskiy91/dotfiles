@@ -8,43 +8,7 @@
 --
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
-  require 'custom/plugins/vim-sleuth',
-
-  require 'custom/plugins/fugitive',
-
-  require 'custom/plugins/git-signs',
-
-  require 'custom/plugins/precognition',
-
-  require 'custom/plugins/split',
-
-  require 'custom/plugins/which-key',
-
-  require 'custom/plugins/telescope',
-
-  require 'custom/plugins/nvim-surround',
-
-  require 'custom/plugins/lspconfig',
-
-  require 'custom/plugins/conform',
-
-  require 'custom/plugins/lualine',
-
-  require 'custom/plugins/nvim-cmp',
-
-  require 'custom/plugins/colorscheme',
-
-  require 'custom/plugins/nvim-tree',
-
-  require 'custom/plugins/mini',
-
-  require 'custom/plugins/todo-comments',
-
-  require 'custom/plugins/nvim-treesitter',
-
-  require 'custom/plugins/vimtex',
-
-  require 'kickstart/plugins/lint',
+  { import = 'custom.plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
