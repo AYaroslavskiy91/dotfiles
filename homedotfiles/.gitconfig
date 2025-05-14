@@ -14,3 +14,9 @@
 	navigate = true
 [credential]
 	helper = manager-core
+[difftool]
+	prompt = true
+[diff]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
