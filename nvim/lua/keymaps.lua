@@ -41,6 +41,9 @@ vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- chmod +x bash scripts while still in them
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true })
 
+-- format only selected in visual mode
+vim.keymap.set('v', '<leader>qf', vim.lsp.buf.format, { remap = false })
+
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --

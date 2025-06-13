@@ -132,3 +132,7 @@ export TERM=xterm-256color
 
 # Created by `userpath` on 2025-02-18 15:31:26
 export PATH="$PATH:/home/ayaros/.local/share/hatch/pythons/3.12/python/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
