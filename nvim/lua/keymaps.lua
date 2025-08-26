@@ -44,6 +44,20 @@ vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true })
 -- format only selected in visual mode
 vim.keymap.set('v', '<leader>qf', vim.lsp.buf.format, { remap = false })
 
+-- Toggle case of word under cursor
+vim.keymap.set('n', '<leader>u', function()
+  local word = vim.fn.expand '<cword>'
+  local toggled
+
+  if word:match '^%u+$' then
+    toggled = word:lower()
+  else
+    toggled = word:upper()
+  end
+
+  vim.cmd('normal! "_ciw' .. toggled)
+end, { desc = 'Toggle case of word under cursor' })
+
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --

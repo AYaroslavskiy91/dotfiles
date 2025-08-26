@@ -1,0 +1,1 @@
+/Users/ayaroslavskiy/projects/dotfiles/scripts/../nvim//LICENSE.md
